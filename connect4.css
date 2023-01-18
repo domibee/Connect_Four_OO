@@ -3,7 +3,7 @@
 #board td {
   width: 50px;
   height: 50px;
-  border: solid 1px #666;
+  border: solid 1px rgb(26, 235, 214);
 }
 
 /* pieces are div within game table cells: draw as colored circles */
@@ -13,14 +13,56 @@
   width: 80%;
   height: 80%;
   border-radius: 50%;
+  border: grey 1px dashed;
 }
 
 /* column-top is table row of clickable areas for each column */
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border: dashed 1px rgba(65, 233, 252, 0.845);
 }
 
 #column-top td:hover {
   background-color: gold;
+}
+
+/* body custom */
+body {
+  background-color: lavender;
+}
+
+/* h1 */
+
+h1 {
+  color: pink;
+  display: flex; 
+  justify-content: center;
+  text-shadow: -1px 1px 2px grey,
+				  1px 1px 2px grey,
+				  1px -1px 0 grey,
+				  -1px -1px 0 grey;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+input {
+  border: none;
+  border: 1px solid rgb(112, 208, 208);
+  border-style: dashed;
+}
+button {
+  background-color: rgb(112, 208, 208);
+  color: black;
+  border: none;
+  border-radius: 10%
 }
